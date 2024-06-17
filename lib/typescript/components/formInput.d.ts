@@ -1,20 +1,20 @@
 import React, { FunctionComponent, ReactNode } from 'react';
-import { StyleProp, TextInputProps, TextProps, ViewProps, ViewStyle } from 'react-native';
+import { TextInputProps, TextProps, TextStyle, ViewProps, ViewStyle } from 'react-native';
 type FormInputProps = {
-    mainContainerStyle?: StyleProp<ViewStyle>;
-    inputContainerStyle?: object;
+    mainContainerStyle?: ViewStyle;
+    inputContainerStyle?: ViewStyle;
     inputContainerBackgroundColor?: string;
     placeholderText?: string;
     placeholderTextColor?: string;
-    inputStyle?: object;
+    inputStyle?: TextStyle | ViewStyle;
     inputTextColor?: string;
     hideLabel?: boolean;
     labelText?: string;
-    labelTextStyle?: object;
-    labelTextContainerStyle?: object;
+    labelTextStyle?: TextStyle;
+    labelTextContainerStyle?: ViewStyle;
     isRequired?: boolean;
     requiredText?: string;
-    requiredTextStyle?: object;
+    requiredTextStyle?: TextStyle;
     requiredTextColor?: string;
     labelTextColor?: string;
     textInputProps?: TextInputProps;
@@ -31,23 +31,23 @@ type FormInputProps = {
     value?: string;
     error?: boolean;
     errorText?: string;
-    errorTextStyle?: object;
+    errorTextStyle?: TextStyle;
     leftIcon?: string;
     leftIconColor?: string;
     leftIconStyle?: object;
-    leftIconContainerStyle?: object;
+    leftIconContainerStyle?: ViewStyle;
     renderLeftIcon?: FunctionComponent<{
         children?: ReactNode;
-        style?: StyleProp<ViewStyle>;
+        style?: ViewStyle;
     }>;
     leftIconOnPress?: () => void;
     rightIcon?: string;
     rightIconColor?: string;
     rightIconStyle?: object;
-    rightIconContainerStyle?: object;
+    rightIconContainerStyle?: ViewStyle;
     renderRightIcon?: FunctionComponent<{
         children?: ReactNode;
-        style?: StyleProp<ViewStyle>;
+        style?: ViewStyle;
     }>;
     rightIconOnPress?: () => void;
     hiddenText?: boolean;
@@ -76,9 +76,9 @@ type FormInputProps = {
     datePickerCloseButtonColor?: string;
     datePickerMode?: 'single' | 'range' | 'multiple';
     selectedItemColor?: string;
-    selectedTextStyle?: object;
+    selectedTextStyle?: TextStyle;
     firstDayOfWeek?: number;
-    headerTextContainerStyle?: object;
+    headerTextContainerStyle?: ViewStyle;
     datePlaceholder?: string;
     datePickerAnimationType?: 'zoomIn' | 'slideUp' | 'slideDown' | 'slideLeft' | 'slideRight' | 'none';
     animationDuration?: number;
