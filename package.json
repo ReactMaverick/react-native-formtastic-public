@@ -1,0 +1,61 @@
+{
+  "name": "react-native-formtastic",
+  "version": "1.5.0",
+  "description": "React Native Custom Form Elements",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "scripts": {
+    "build": "bob build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReactMaverick/react-native-formtastic.git"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-native": ">=0.73.6 <=0.74.x",
+    "react-native-ui-datepicker": "^2.0.3",
+    "react-native-vector-icons": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "@types/react-native-vector-icons": "^6.4.18",
+    "react-native-builder-bob": "^0.23.2",
+    "typescript": "^5.0.4"
+  },
+  "author": "Websadroit",
+  "license": "MIT",
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "react-native",
+    "forms",
+    "input",
+    "datepicker",
+    "styling",
+    "validation",
+    "custom-validation",
+    "error-handling",
+    "date-selection",
+    "range-selection",
+    "multi-selection",
+    "customizable",
+    "form-controls",
+    "user-input",
+    "react-native-datepicker",
+    "react-native-forms",
+    "react-native-input",
+    "react-native-validation",
+    "react-native-styling",
+    "react-native-components",
+    "form-validation",
+    "date-picker",
+    "time-picker",
+    "date-time-picker",
+    "react-native-date-picker",
+    "react-native-time-picker",
+    "react-native-date-time-picker"
+  ]
+}
