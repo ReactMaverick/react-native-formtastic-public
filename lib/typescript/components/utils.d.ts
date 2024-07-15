@@ -1,5 +1,6 @@
 export declare const screenHeight: number;
 export declare const screenWidth: number;
+export declare const deviceTheme: import("react-native").ColorSchemeName;
 export declare const colors: {
     primary: string;
     secondary: string;
@@ -9,6 +10,7 @@ export declare const colors: {
     offWhite: string;
     transparentBlack: string;
     grey: string;
+    slightlyDarkGrey: string;
     lightGrey: string;
     darkGrey: string;
     error: string;
@@ -18,14 +20,23 @@ export declare const colors: {
     lightGreen: string;
     reddishOrange: string;
 };
+export declare const getThemedColor: (theme: string, element: string) => {
+    backgroundColor: string;
+    color?: undefined;
+} | {
+    color: string;
+    backgroundColor?: undefined;
+} | undefined;
 export declare const styles: {
     defaultInputStyle: {
         borderWidth: number;
         borderColor: string;
         width: "100%";
         padding: number;
-        backgroundColor: string;
         borderRadius: number;
+        color: string;
+        justifyContent: "center";
+        height: number;
     };
     defaultMainContainerStyle: {
         justifyContent: "center";
@@ -37,7 +48,6 @@ export declare const styles: {
         justifyContent: "center";
         alignItems: "center";
         padding: number;
-        backgroundColor: string;
         borderRadius: number;
         borderBottomStartRadius: number;
         borderBottomEndRadius: number;
@@ -45,7 +55,6 @@ export declare const styles: {
     };
     defaultLabelTextStyle: {
         fontSize: number;
-        color: string;
         marginBottom: number;
     };
     defaultLabelTextContainerStyle: {
@@ -85,7 +94,6 @@ export declare const styles: {
     datePickerModalInner: {
         justifyContent: "center";
         alignItems: "center";
-        backgroundColor: string;
         padding: number;
         borderRadius: number;
         zIndex: number;

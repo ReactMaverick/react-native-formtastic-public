@@ -52,6 +52,7 @@ type FormInputProps = {
     rightIconOnPress?: () => void;
     hiddenText?: boolean;
     disabled?: boolean;
+    theme?: 'light' | 'dark' | 'system';
     datePicker?: boolean;
     datePickerWithTime?: boolean;
     disableFutureDates?: boolean;

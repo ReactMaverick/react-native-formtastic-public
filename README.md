@@ -47,7 +47,13 @@ export default App;
 
 ## Reference Image
 
-![Screenshot of FormInput Component](https://i.ibb.co/JnkW0SY/form-Input-component.png "FormInput Component")
+- **Input Component (Light)**
+
+  ![Screenshot of FormInput Component](https://i.ibb.co/yQ0GZ5j/form-input-light.png "FormInput Component")
+
+- **Input Component (Dark)**
+
+  ![Screenshot of FormInput Component](https://i.ibb.co/9TJsFS0/form-input-dark.png "FormInput Component")
 
 ## DatePicker Usage
 
@@ -184,25 +190,45 @@ export default App;
 
 ## Reference Image (Date Picker)
 
-- **Input Component**
+- **Input Component (Light)**
 
   ![Screenshot of FormInput Date Picker](https://i.ibb.co/FVdj8jH/date-Picker-ref-1.png "FormInput Date Picker Component")
 
-- **Date Picker Modal (datePickerMode: "single")**
+- **Input Component (Dark)**
+
+  ![Screenshot of FormInput Date Picker](https://i.ibb.co/MSqpL1s/form-input-datepicker-form-dark.png "FormInput Date Picker Component")
+
+- **Date Picker Modal (datePickerMode: "single (Light)")**
 
   ![Screenshot of FormInput Date Picker](https://i.ibb.co/GtFZLVQ/date-Picker-single.png "FormInput Date Picker Modal")
 
-- **Date Picker Modal (datePickerMode: "single", dateTimePicker)**
+- **Date Picker Modal (datePickerMode: "single (Dark)")**
+
+  ![Screenshot of FormInput Date Picker](https://i.ibb.co/s6DNft6/date-picker-single-dark.png "FormInput Date Picker Modal")
+
+- **Date Picker Modal (datePickerMode: "single(Light)", dateTimePicker)**
 
   ![Screenshot of FormInput Date Time Picker](https://i.ibb.co/VYrS6kw/date-Time-Picker-single.png "FormInput Date Time Picker Modal")
 
-- **Date Picker Modal (datePickerMode: "range")**
+- **Date Picker Modal (datePickerMode: "single (Dark)", dateTimePicker)**
+
+  ![Screenshot of FormInput Date Time Picker](https://i.ibb.co/Tgy2Wm8/date-time-picker-dark.png "FormInput Date Time Picker Modal")
+
+- **Date Picker Modal (datePickerMode: "range (Light)")**
 
   ![Screenshot of FormInput Date Range Picker](https://i.ibb.co/w4Gjjsz/date-Picker-range.png "FormInput Date Range Picker Modal")
 
-- **Date Picker Modal (datePickerMode: "multiple")**
+- **Date Picker Modal (datePickerMode: "range (Dark)")**
+
+  ![Screenshot of FormInput Date Range Picker](https://i.ibb.co/Jd2Rkv9/date-picker-range-dark.png "FormInput Date Range Picker Modal")
+
+- **Date Picker Modal (datePickerMode: "multiple (Light)")**
 
   ![Screenshot of FormInput Multiple Date Picker](https://i.ibb.co/QJvmshf/date-Picker-multiple.png "FormInput Multiple Date Picker Modal")
+
+- **Date Picker Modal (datePickerMode: "multiple (Dark)")**
+
+  ![Screenshot of FormInput Multiple Date Picker](https://i.ibb.co/9WQRJTW/date-picker-multiple-dark.png "FormInput Multiple Date Picker Modal")
 
 ## Props
 
@@ -754,6 +780,18 @@ The component accepts the following props (Important & useful props are shown fi
     />
     ```
 
+- `theme`: String to specify the theme of the input field and the datepicker. Options are `light`, `dark`, or `system` (to automatically match the device's theme).
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      theme="dark" // Default is system
+      //... Other Props
+    />
+    ```
+
 ## Date Picker Props
 
 These are the date picker props (Important & useful props are shown first and are in bold) [All props are optional. ***For datepicker to work, you need to give the datepicker prop.***]:
@@ -1097,6 +1135,16 @@ These are the date picker props (Important & useful props are shown first and ar
     ```
 
 ## Changelog
+
+### [1.7.0] - 2024-07-15
+
+#### Changed
+
+- Updated visual style of the component.
+
+#### Added
+
+- `theme` prop: Introduced a new `theme` prop that allows users to set the theme of the component. The available options are `light`, `dark`, and `system`. The `system` option automatically matches the theme of the device.
 
 ### [1.6.0] - 2024-06-17
 
