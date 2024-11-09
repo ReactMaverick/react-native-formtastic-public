@@ -1,2 +1,2 @@
-export * from './components';
+export * from './formInput';
 //# sourceMappingURL=index.d.ts.map

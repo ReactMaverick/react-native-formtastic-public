@@ -1,6 +1,6 @@
-import React, { FunctionComponent, ReactNode } from 'react';
-import { TextInputProps, TextProps, TextStyle, ViewProps, ViewStyle } from 'react-native';
-type FormInputProps = {
+import { FunctionComponent, ReactNode } from "react";
+import { TextInputProps, TextProps, TextStyle, ViewProps, ViewStyle } from "react-native";
+export type FormInputPropTypes = {
     mainContainerStyle?: ViewStyle;
     inputContainerStyle?: ViewStyle;
     inputContainerBackgroundColor?: string;
@@ -87,6 +87,4 @@ type FormInputProps = {
     dateFormat?: string;
     dateTimeFormat?: string;
 };
-declare const FormInput: React.FC<FormInputProps>;
-export default FormInput;
-//# sourceMappingURL=formInput.d.ts.map
+//# sourceMappingURL=formInputPropTypes.d.ts.map

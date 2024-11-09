@@ -1136,6 +1136,14 @@ These are the date picker props (Important & useful props are shown first and ar
 
 ## Changelog
 
+### [1.8.1] - 2024-09-11
+
+- Fixed minor styling issue.
+
+### [1.8.0] - 2024-09-11
+
+- Updated code to be compatible with Latest React Native Version.
+
 ### [1.7.0] - 2024-07-15
 
 #### Changed
