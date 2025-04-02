@@ -670,6 +670,34 @@ The component accepts the following props (Important & useful props are shown fi
     />
     ```
 
+- `leftIconSource`: Source of the left icon (e.g., FontAwesome, MaterialIcons, etc.).
+
+  - Enums:`'font-awesome'`, `'font-awesome5'`, `'material'`, `'material-community'`, `'simple-line-icon'`, `'zocial'`, `'octicon'`, `'ionicon'`, `'foundation'`, `'evilicon'`, `'entypo'`, `'ant-design'`, `'feather'`, `'fontisto'`
+
+  - Usage:
+
+    ```tsx
+
+    <FormInput
+      //.... Other Props
+      leftIconSource="ionicon" // Default is 'font-awesome'
+      //... Other Props
+    />
+    ```
+
+- `leftIconSize`: Size of the left icon.
+
+  - Usage:
+
+    ```tsx
+
+    <FormInput
+      //.... Other Props
+      leftIconSize={20} // Default is 20
+      //... Other Props
+    />
+    ```
+
 - `leftIconOnPress`: Function to call when the left icon is pressed.
 
   - Usage:
@@ -744,6 +772,34 @@ The component accepts the following props (Important & useful props are shown fi
     />
     ```
 
+- `rightIconSource`: Source of the right icon (e.g., FontAwesome, MaterialIcons, etc.).
+
+  - Enums:`'font-awesome'`, `'font-awesome5'`, `'material'`, `'material-community'`, `'simple-line-icon'`, `'zocial'`, `'octicon'`, `'ionicon'`, `'foundation'`, `'evilicon'`, `'entypo'`, `'ant-design'`, `'feather'`, `'fontisto'`
+
+  - Usage:
+
+    ```tsx
+
+    <FormInput
+      //.... Other Props
+      rightIconSource="ionicon" // Default is 'font-awesome'
+      //... Other Props
+    />
+    ```
+
+- `rightIconSize`: Size of the right icon.
+
+  - Usage:
+
+    ```tsx
+
+    <FormInput
+      //.... Other Props
+      rightIconSize={20} // Default is 20
+      //... Other Props
+    />
+    ```
+
 - `rightIconOnPress`: Function to call when the right icon is pressed.
 
   - Usage:
@@ -788,6 +844,30 @@ The component accepts the following props (Important & useful props are shown fi
     <FormInput
       //.... Other Props
       theme="dark" // Default is system
+      //... Other Props
+    />
+    ```
+
+- `multiline`: Boolean to enable multiline input.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      multiline={true}
+      //... Other Props
+    />
+    ```
+
+- `numberOfLines`: Number of lines for multiline input.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      numberOfLines={4}
       //... Other Props
     />
     ```
@@ -1026,30 +1106,6 @@ These are the date picker props (Important & useful props are shown first and ar
     />
     ```
 
-- `selectedItemColor`: Color of the selected item in the date picker.
-
-  - Usage:
-
-    ```tsx
-    <FormInput
-      //.... Other Props
-      selectedItemColor="yellow"
-      //... Other Props
-    />
-    ```
-
-- `selectedTextStyle`: Style object for the selected text in the date picker.
-
-  - Usage:
-
-    ```tsx
-    <FormInput
-      //.... Other Props
-      selectedTextStyle={{ fontWeight: "400" }}
-      //... Other Props
-    />
-    ```
-
 - `firstDayOfWeek`: First day of the week in the date picker.
 
   - Usage:
@@ -1058,18 +1114,6 @@ These are the date picker props (Important & useful props are shown first and ar
     <FormInput
       //.... Other Props
       firstDayOfWeek={0} // Set the first day of week as number. (i.e. 0 is Sunday, 1 is Monday,.. etc.). Default is 1 (Monday)
-      //... Other Props
-    />
-    ```
-
-- `headerTextContainerStyle`: Style object for the header text container in the date picker.
-
-  - Usage:
-
-    ```tsx
-    <FormInput
-      //.... Other Props
-      headerTextContainerStyle={{ borderRadius: 5 }}
       //... Other Props
     />
     ```
@@ -1093,7 +1137,7 @@ These are the date picker props (Important & useful props are shown first and ar
     ```tsx
     <FormInput
       //.... Other Props
-      animationDuration={300} // Default is 400 (400 ms)
+      animationDuration={300} // Default is 800 (800 ms)
       //... Other Props
     />
     ```
@@ -1134,7 +1178,366 @@ These are the date picker props (Important & useful props are shown first and ar
     />
     ```
 
+- `selectedContainerStyle`: Style object for the selected date container in the date picker.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      selectedContainerStyle={{ backgroundColor: "blue" }}
+      //... Other Props
+    />
+    ```
+
+- `selectedTextStyle`: Style object for the selected date text in the date picker.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      selectedTextStyle={{ color: "white" }}
+      //... Other Props
+    />
+    ```
+
+- `todayContainerStyle`: Style object for the today's date container in the date picker.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      todayContainerStyle={{ backgroundColor: "green" }}
+      //... Other Props
+    />
+    ```
+
+- `todayTextStyle`: Style object for the today's date text in the date picker.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      todayTextStyle={{ color: "white" }}
+      //... Other Props
+    />
+    ```
+
+- `weekDaysContainerStyle`: Style object for the week days names container in the date picker.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      weekDaysContainerStyle={{ backgroundColor: "yellow" }}
+      //... Other Props
+    />
+    ```
+
+- `weekDaysTextStyle`: Style object for the week days names text in the date picker.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        weekDaysTextStyle={{ color: "red" }}
+        //... Other Props
+      />
+      ```
+
+- `yearContainerStyle`: Style object for the years container in the date picker in the year view.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      yearContainerStyle={{ backgroundColor: "purple" }}
+      //... Other Props
+    />
+    ```
+
+- `yearTextStyle`: Style object for the years text in the date picker in the year view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        yearTextStyle={{ color: "orange" }}
+        //... Other Props
+      />
+      ```
+
+- `activeYearContainerStyle`: Style object for the active year container in the date picker in the year view.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      activeYearContainerStyle={{ backgroundColor: "purple" }}
+      //... Other Props
+    />
+    ```
+
+- `activeYearTextStyle`: Style object for the active year text in the date picker in the year view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        activeYearTextStyle={{ color: "white" }}
+        //... Other Props
+      />
+      ```
+
+- `selectedYearContainerStyle`: Style object for the selected year container (Current Year) in the date picker in the year view.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      selectedYearContainerStyle={{ backgroundColor: "purple" }}
+      //... Other Props
+    />
+    ```
+
+- `selectedYearTextStyle`: Style object for the selected year text (Current Year) in the date picker in the year view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        selectedYearTextStyle={{ color: "white" }}
+        //... Other Props
+      />
+      ```
+
+- `monthContainerStyle`: Style object for the months container in the date picker in the month view.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      monthContainerStyle={{ backgroundColor: "purple" }}
+      //... Other Props
+    />
+    ```
+
+- `monthTextStyle`: Style object for the months text in the date picker in the month view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        monthTextStyle={{ color: "orange" }}
+        //... Other Props
+      />
+      ```
+
+- `selectedMonthContainerStyle`: Style object for the selected month container in the date picker in the month view.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      selectedMonthContainerStyle={{ backgroundColor: "purple" }}
+      //... Other Props
+    />
+    ```
+
+- `selectedMonthTextStyle`: Style object for the selected month text in the date picker in the month view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        selectedMonthTextStyle={{ color: "white" }}
+        //... Other Props
+      />
+      ```
+
+- `datePickerLeftButtonStyle`: Style object for the left navigation button in the date picker.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      datePickerLeftButtonStyle={{ backgroundColor: "blue" }}
+      //... Other Props
+    />
+    ```
+
+- `datePickerRightButtonStyle`: Style object for the right navigation button in the date picker.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        datePickerRightButtonStyle={{ backgroundColor: "blue" }}
+        //... Other Props
+      />
+      ```
+
+- `datePickerDayContainerStyle`: Style object for the day container in the date picker in the calendar view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        datePickerDayContainerStyle={{ backgroundColor: "blue" }}
+        //... Other Props
+      />
+      ```
+
+- `datePickerDayTextStyle`: Style object for the day text in the date picker in the calendar view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        datePickerDayTextStyle={{ color: "red" }}
+        //... Other Props
+      />
+      ```
+
+- `yearSelectorTextStyle`: Style object for the year selector text in the date picker in the calendar view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        yearSelectorTextStyle={{ color: "red" }}
+        //... Other Props
+      />
+      ```
+
+- `monthSelectorTextStyle`: Style object for the month selector text in the date picker in the calendar view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        monthSelectorTextStyle={{ color: "red" }}
+        //... Other Props
+      />
+      ```
+
+- `timeSelectorTextStyle`: Style object for the time selector text in the date picker in the calendar view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        timeSelectorTextStyle={{ color: "red" }}
+        //... Other Props
+      />
+      ```
+
+- `datePickerOutsideDayTextStyle`: Style object for the outside day text in the date picker in the calendar view. (e.g., days that are not in the current month).
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        datePickerOutsideDayTextStyle={{ color: "red" }}
+        //... Other Props
+      />
+      ```
+
+- `timePickerIndicatorStyle`: Style object for the time picker indicator in the date picker in time view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        timePickerIndicatorStyle={{ backgroundColor: "blue" }}
+        //... Other Props
+      />
+      ```
+
+- `timeTextStyle`: Style object for the time text in the date picker in time view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        timeTextStyle={{ color: "red" }}
+        //... Other Props
+      />
+      ```
+
+- `datePickerRangeStyle`: Style object for the date picker range selection in the date picker in range view.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        datePickerRangeStyle={{ backgroundColor: "blue" }}
+        //... Other Props
+      />
+      ```
+
+- `datePickerProps`: Additional props for the date picker component.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        datePickerProps={{ date: new Date() }} // You can pass any additional props for the date picker component here.
+        //... Other Props
+      />
+      ```
+
+- `datePickerStyles`: Additional styles for the date picker component.
+  
+    - Usage:
+  
+      ```tsx
+      <FormInput
+        //.... Other Props
+        datePickerStyles={{today: {backgroundColor: "red" }}} // You can pass any additional styles for the date picker component here. Please follow the datepicker library documentation for the correct format.
+        //... Other Props
+      />
+      ```
+
+    - For more details on the available styles, refer to the [react-native-ui-datepicker documentation](https://www.npmjs.com/package/react-native-ui-datepicker).
+
 ## Changelog
+
+### [1.9.0] - 2025-04-02
+
+- Introduced several new styling props for the DatePicker, allowing greater customization of its appearance (e.g., `selectedContainerStyle`, `todayContainerStyle`, `datePickerLeftButtonStyle`, etc.).
+- Added support for additional `datePickerProps` and `datePickerStyles` for advanced customization.
+- Updated `datepicker` library to the latest version.
+- Added `leftIconSource` and `rightIconSource` props: These props allow users to specify the source of their icons (e.g., FontAwesome, MaterialIcons, etc.). The default source is FontAwesome.
+- Added `leftIconSize` and `rightIconSize` props: These props allow users to specify size of the icons.
+- Added `multiline` and `numberOfLines` props: These props allow users to enable multiline input and specify the number of lines for the input field.
 
 ### [1.8.1] - 2024-09-11
 

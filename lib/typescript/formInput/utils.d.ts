@@ -8,6 +8,10 @@ export declare const colors: {
     black: string;
     white: string;
     offWhite: string;
+    transparentWhite: string;
+    semiTransparentWhite: string;
+    semiTransparentBlack: string;
+    transparentGrey: string;
     transparentBlack: string;
     grey: string;
     slightlyDarkGrey: string;
@@ -18,6 +22,7 @@ export declare const colors: {
     success: string;
     warning: string;
     lightGreen: string;
+    transparentGreen: string;
     reddishOrange: string;
 };
 export declare const getThemedColor: (theme: string, element: string) => {
@@ -73,13 +78,11 @@ export declare const styles: {
     defaultLeftIconContainerStyle: {
         position: "absolute";
         left: number;
-        top: number;
         zIndex: number;
     };
     defaultRightIconContainerStyle: {
         position: "absolute";
         right: number;
-        top: number;
         zIndex: number;
     };
     dateInputWrapperInner: {
@@ -96,7 +99,7 @@ export declare const styles: {
         alignItems: "center";
         padding: number;
         borderRadius: number;
-        zIndex: number;
+        minWidth: number;
     };
     datePickerModalCloseButton: {
         alignItems: "center";
@@ -113,44 +116,36 @@ export declare const styles: {
         color: string;
     };
     timePickerContainerStyleCustom: {
-        backgroundColor: string;
         borderRadius: number;
     };
     weekDaysContainerStyleCustom: {
-        backgroundColor: string;
         borderRadius: number;
+        marginVertical: number;
+        height: number;
     };
     weekDaysTextStyleCustom: {
         color: string;
         fontWeight: "500";
     };
-    yearContainerStyleCustom: {
-        backgroundColor: string;
-        borderRadius: number;
-    };
-    monthContainerStyleCustom: {
-        backgroundColor: string;
-        borderRadius: number;
-    };
-    timePickerIndicatorStyleCustom: {
-        backgroundColor: string;
+    yearMonthContainerStyleCustom: {
         borderRadius: number;
     };
     datePickerModalLeftRightButtonIconOuter: {
-        backgroundColor: string;
-        paddingVertical: number;
-        paddingHorizontal: number;
+        padding: number;
         borderRadius: number;
         justifyContent: "center";
         alignItems: "center";
     };
     headerContainerStyleCustom: {
-        backgroundColor: string;
         borderRadius: number;
     };
     headerTextStyleCustom: {
         color: string;
         fontWeight: "800";
+    };
+    selectedContainerStyleCustom: {
+        backgroundColor: string;
+        borderRadius: number;
     };
     selectedTextStyleCustom: {
         color: string;
@@ -169,6 +164,40 @@ export declare const styles: {
     };
     datePickerConfirmButtonText: {
         color: string;
+        fontWeight: "700";
+    };
+    todayContainerStyleCustom: {
+        borderColor: string;
+        borderWidth: number;
+        borderRadius: number;
+    };
+    yearMonthTextStyleCustom: {
+        fontWeight: "700";
+    };
+    activeYearMonthContainerStyleCustom: {
+        backgroundColor: string;
+        borderRadius: number;
+    };
+    activeYearMonthTextStyleCustom: {
+        color: string;
+        fontWeight: "700";
+    };
+    selectedYearMonthContainerStyleCustom: {
+        borderColor: string;
+        borderWidth: number;
+        borderRadius: number;
+    };
+    selectedYearMonthTextStyleCustom: {
+        fontWeight: "700";
+    };
+    yearMonthTimeSelectorTextStyleCustom: {
+        fontWeight: "700";
+        fontSize: number;
+    };
+    datePickerRangeStyleCustom: {
+        backgroundColor: string;
+    };
+    timeTextStyleCustom: {
         fontWeight: "700";
     };
 };

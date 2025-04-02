@@ -1,5 +1,5 @@
-import { FunctionComponent, ReactNode } from "react";
-import { TextInputProps, TextProps, TextStyle, ViewProps, ViewStyle } from "react-native";
+import { ReactNode } from "react";
+import { StyleProp, TextInputProps, TextProps, TextStyle, ViewProps, ViewStyle } from "react-native";
 export type FormInputPropTypes = {
     mainContainerStyle?: ViewStyle;
     inputContainerStyle?: ViewStyle;
@@ -34,25 +34,25 @@ export type FormInputPropTypes = {
     errorTextStyle?: TextStyle;
     leftIcon?: string;
     leftIconColor?: string;
-    leftIconStyle?: object;
+    leftIconStyle?: StyleProp<TextStyle>;
     leftIconContainerStyle?: ViewStyle;
-    renderLeftIcon?: FunctionComponent<{
-        children?: ReactNode;
-        style?: ViewStyle;
-    }>;
+    renderLeftIcon?: ReactNode;
+    leftIconSource?: 'font-awesome' | 'font-awesome5' | 'material' | 'material-community' | 'simple-line-icon' | 'zocial' | 'octicon' | 'ionicon' | 'foundation' | 'evilicon' | 'entypo' | 'ant-design' | 'feather' | 'fontisto';
+    leftIconSize?: number;
     leftIconOnPress?: () => void;
     rightIcon?: string;
     rightIconColor?: string;
-    rightIconStyle?: object;
+    rightIconStyle?: StyleProp<TextStyle>;
     rightIconContainerStyle?: ViewStyle;
-    renderRightIcon?: FunctionComponent<{
-        children?: ReactNode;
-        style?: ViewStyle;
-    }>;
+    renderRightIcon?: ReactNode;
+    rightIconSource?: 'font-awesome' | 'font-awesome5' | 'material' | 'material-community' | 'simple-line-icon' | 'zocial' | 'octicon' | 'ionicon' | 'foundation' | 'evilicon' | 'entypo' | 'ant-design' | 'feather' | 'fontisto';
+    rightIconSize?: number;
     rightIconOnPress?: () => void;
     hiddenText?: boolean;
     disabled?: boolean;
     theme?: 'light' | 'dark' | 'system';
+    multiline?: boolean;
+    numberOfLines?: number;
     datePicker?: boolean;
     datePickerWithTime?: boolean;
     disableFutureDates?: boolean;
@@ -77,7 +77,6 @@ export type FormInputPropTypes = {
     datePickerCloseButtonColor?: string;
     datePickerMode?: 'single' | 'range' | 'multiple';
     selectedItemColor?: string;
-    selectedTextStyle?: TextStyle;
     firstDayOfWeek?: number;
     headerTextContainerStyle?: ViewStyle;
     datePlaceholder?: string;
@@ -86,5 +85,34 @@ export type FormInputPropTypes = {
     hideDatePickerConfirmButton?: boolean;
     dateFormat?: string;
     dateTimeFormat?: string;
+    selectedContainerStyle?: ViewStyle;
+    selectedTextStyle?: TextStyle;
+    todayContainerStyle?: ViewStyle;
+    todayTextStyle?: TextStyle;
+    weekDaysContainerStyle?: ViewStyle;
+    weekDaysTextStyle?: TextStyle;
+    yearContainerStyle?: ViewStyle;
+    yearTextStyle?: TextStyle;
+    activeYearContainerStyle?: ViewStyle;
+    activeYearTextStyle?: TextStyle;
+    selectedYearContainerStyle?: ViewStyle;
+    selectedYearTextStyle?: TextStyle;
+    monthContainerStyle?: ViewStyle;
+    monthTextStyle?: TextStyle;
+    selectedMonthContainerStyle?: ViewStyle;
+    selectedMonthTextStyle?: TextStyle;
+    datePickerLeftButtonStyle?: ViewStyle;
+    datePickerRightButtonStyle?: ViewStyle;
+    datePickerDayContainerStyle?: ViewStyle;
+    datePickerDayTextStyle?: TextStyle;
+    yearSelectorTextStyle?: TextStyle;
+    monthSelectorTextStyle?: TextStyle;
+    timeSelectorTextStyle?: TextStyle;
+    datePickerOutsideDayTextStyle?: TextStyle;
+    timePickerIndicatorStyle?: ViewStyle;
+    datePickerRangeStyle?: ViewStyle;
+    datePickerProps?: any;
+    datePickerStyles?: any;
+    timeTextStyle?: TextStyle;
 };
 //# sourceMappingURL=formInputPropTypes.d.ts.map
