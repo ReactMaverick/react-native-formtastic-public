@@ -1,6 +1,6 @@
 {
   "name": "react-native-formtastic",
-  "version": "1.9.0",
+  "version": "1.9.2",
   "description": "React Native Custom Form Elements",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",

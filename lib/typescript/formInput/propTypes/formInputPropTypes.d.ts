@@ -80,6 +80,7 @@ export type FormInputPropTypes = {
     firstDayOfWeek?: number;
     headerTextContainerStyle?: ViewStyle;
     datePlaceholder?: string;
+    datePlaceholderStyle?: TextStyle;
     datePickerAnimationType?: 'zoomIn' | 'slideUp' | 'slideDown' | 'slideLeft' | 'slideRight' | 'none';
     animationDuration?: number;
     hideDatePickerConfirmButton?: boolean;

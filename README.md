@@ -1526,9 +1526,26 @@ These are the date picker props (Important & useful props are shown first and ar
       />
       ```
 
+- `datePlaceholderStyle`: Style object for the date placeholder text.
+
+  - Usage:
+
+    ```tsx
+    <FormInput
+      //.... Other Props
+      datePlaceholderStyle={{ color: "blue" }}
+      //... Other Props
+    />
+    ```
+
     - For more details on the available styles, refer to the [react-native-ui-datepicker documentation](https://www.npmjs.com/package/react-native-ui-datepicker).
 
 ## Changelog
+
+### [1.9.2] - 2025-05-01
+
+- Added `datePlaceholderStyle` prop to allow users to pass additional styles for the date placeholder text.
+- Fixed minor styling issues in the date picker component.
 
 ### [1.9.0] - 2025-04-02
 
